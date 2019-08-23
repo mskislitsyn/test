@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="header">
+	<h1>Hi, {{user.username}}!</h1>
+</div>
+<div class="links">
+	<a href="{% url 'group_one_view' %}">Group one view</a>
+	<br>
+	<a href="{% url 'group_two_view' %}">Group two view</a>
+</div>
+{% endblock %}
